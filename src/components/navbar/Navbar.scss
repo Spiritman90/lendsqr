@@ -1,0 +1,67 @@
+@import "../../scss/variables/colors.scss";
+
+.navbar {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10.5125rem;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  // &__logo-box {
+  //   padding: 2rem;
+  // }
+
+  &__search-input {
+    padding: 0.75rem 14rem;
+    border: 1px solid #213f7d;
+    border: 1px solid rgba(84, 95, 125, 0.15);
+    outline: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    color: $light-color;
+    font-family: $primary-font;
+  }
+
+  &__input {
+    position: relative;
+  }
+
+  &__button {
+    padding: 0.78125rem 1.5rem;
+    background-color: $secondary-color;
+    border: none;
+    position: absolute;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    right: -1rem;
+  }
+
+  &__docs {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    color: $primary-color;
+    font-size: 1rem;
+  }
+
+  &__user {
+    border-radius: 50%;
+  }
+
+  &__username {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+  }
+}
