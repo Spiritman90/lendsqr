@@ -1,0 +1,41 @@
+@import "../../scss/variables/colors.scss";
+
+.login-container {
+  padding: 5rem;
+  display: flex;
+  background-color: #e5e5e5;
+  gap: 1rem;
+}
+.stat {
+  background-color: #fff;
+  width: 15rem;
+  height: 10rem;
+  box-shadow: 0.1875rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.04);
+  order: 0.0625rem solid rgba(33, 63, 125, 0.06);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  &__body {
+    padding: 1rem;
+  }
+
+  &__number {
+    padding-left: 1rem;
+  }
+
+  &__icon {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $light-color;
+  }
+
+  &__number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}

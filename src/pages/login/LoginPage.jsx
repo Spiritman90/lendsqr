@@ -6,6 +6,11 @@ import ShowPasswordIcon from "../../assets/svgs/ShowPasswordIcon";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 // import { toast } from "react-toastify";
+// import StatCard from "../../components/UserStatCard/StatCard";
+// import ColoredUsers from "../../assets/svgs/ColoredUsers";
+// import ActiveUserIcon from "../../assets/svgs/ActiveUserIcon";
+// import UsersWithLoansIcon from "../../assets/svgs/UsersWithLoansIcon";
+// import UsersWithSavingsIcon from "../../assets/svgs/UsersWithSavingsIcon";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -23,6 +28,25 @@ const LoginPage = () => {
     navigate("/dashboard");
   };
   return (
+    // <div className="login-container">
+    //   <StatCard IconSrc={<ColoredUsers />} heading="USERS" figure="2,453" />
+    //   <StatCard
+    //     IconSrc={<ActiveUserIcon />}
+    //     heading="ACTIVE USERS"
+    //     figure="2,453"
+    //   />
+    //   <StatCard
+    //     IconSrc={<UsersWithLoansIcon />}
+    //     heading="USERS WITH LOANS"
+    //     figure="12,453"
+    //   />
+    //   <StatCard
+    //     IconSrc={<UsersWithSavingsIcon />}
+    //     heading="USERS WITH SAVINGS"
+    //     figure="102,453"
+    //   />
+    // </div>
+
     <div className="login">
       <div className="login__logo-box">
         <Logo />

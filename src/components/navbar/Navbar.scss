@@ -5,16 +5,12 @@
   display: flex;
   align-items: center;
   gap: 10.5125rem;
-  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
-
-  // &__logo-box {
-  //   padding: 2rem;
-  // }
+  box-shadow: 0.1875rem 0rem 1.25rem rgba(0, 0, 0, 0.04);
 
   &__search-input {
     padding: 0.75rem 14rem;
-    border: 1px solid #213f7d;
-    border: 1px solid rgba(84, 95, 125, 0.15);
+    border: 0.0625rem solid #213f7d;
+    border: 0.0625rem solid rgba(84, 95, 125, 0.15);
     outline: none;
     border-radius: 0.5rem;
     padding-left: 1rem;
