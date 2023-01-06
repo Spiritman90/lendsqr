@@ -1,1 +1,75 @@
 @import "../../scss/variables/colors.scss";
+
+.sidebar {
+  position: fixed;
+  width: 17.6875rem;
+  height: 106.125rem;
+  box-shadow: 0rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  // background-color: antiquewhite;
+
+  &__organization {
+    display: flex;
+    gap: 0.625rem;
+    margin: 0 1rem;
+    margin-bottom: 3.25rem;
+    margin-top: 2.4375rem;
+  }
+  &__dashboard {
+    display: flex;
+    gap: 0.625rem;
+    margin: 0 1rem;
+    margin-bottom: 2.5625rem;
+  }
+
+  &__heading {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $primary-color;
+  }
+  &__heading2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $light-color;
+  }
+
+  &__brand {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $light-color;
+    padding-left: 0.5625rem;
+    margin-bottom: 1.25rem;
+    margin: 0 1rem;
+  }
+
+  &__links {
+    ul {
+      .active {
+        border-left: 0.3rem solid $secondary-color;
+        a {
+          color: $light-color;
+        }
+      }
+      li {
+        border-left: 0.3rem solid transparent;
+        margin: 1.25rem 0;
+        list-style-type: none;
+        a {
+          margin: 0 1rem;
+          text-decoration: none;
+          font-size: 1rem;
+          display: flex;
+          gap: 0.625rem;
+          color: $light-color;
+        }
+        transition: 0.3s ease-in-out;
+        &:hover {
+          border-left: 0.3rem solid $secondary-color;
+          a {
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
