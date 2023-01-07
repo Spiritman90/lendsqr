@@ -54,10 +54,14 @@ const LoginPage = () => {
       </div>
 
       <div className="login__image-wrapper">
-        <img src={LoginImage} alt="login" className="login__photo" />
+        <div className="login__background-photo">
+          <img src={LoginImage} alt="login" className="login__photo" />
+        </div>
         <div className="login__text-wrapper">
-          <h2 className="login__welcome">Welcome!</h2>
-          <p className="login__details">Enter details to login.</p>
+          <div className="login__welcome-box">
+            <h2 className="login__welcome">Welcome!</h2>
+            <p className="login__details">Enter details to login.</p>
+          </div>
 
           <div className="login__info">
             <form className="login__form" onSubmit={handleSubmit}>
@@ -84,7 +88,7 @@ const LoginPage = () => {
               </div>
               <p className="login__forgot-password">FORGOT PASSWORD?</p>
               <button type="submit" className="login__button">
-                LOG IN
+                LOGIN
               </button>
             </form>
           </div>

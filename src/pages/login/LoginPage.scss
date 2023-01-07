@@ -3,25 +3,39 @@
 .login {
   // padding: 4.1875rem 17.5625rem;
 
+  @media screen and (max-width: 600px) {
+    // padding: 0 4rem;
+  }
+
   &__logo-box {
     display: flex;
     gap: 0.66125rem;
     padding-top: 6.625rem;
     padding-left: 6.0625rem;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 2rem;
+      // padding: 1rem;
+    }
   }
 
   &__image-wrapper {
     display: flex;
     gap: 5rem;
-    padding-left: 6.0625rem;
-  }
-
-  &__text-wrapper {
-    padding-right: 9.8125rem;
+    align-items: center;
+    justify-content: center;
+    // padding-left: 6.0625rem;
   }
 
   &__photo {
     margin-top: 8.6875rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__info {
   }
 
   &__welcome {
@@ -29,6 +43,15 @@
     margin-bottom: 0.625rem;
     color: $primary-color;
     font-size: 2.5rem;
+    // font-family: $secondary-font;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  &__welcome-box {
+    @media screen and (max-width: 600px) {
+      padding-left: 1rem;
+    }
   }
 
   &__details {
@@ -41,7 +64,6 @@
 
   &__label {
     display: block;
-    position: relative;
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
@@ -49,13 +71,25 @@
 
   &__show {
     position: absolute;
-    bottom: 16rem;
-    right: 7rem;
+    bottom: 8.5rem;
+    right: 1rem;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+      // bottom: 9rem;
+      right: 5rem;
+    }
+  }
+
+  &__form {
+    position: relative;
+    @media screen and (max-width: 600px) {
+      padding-right: 3rem;
+    }
   }
 
   &__input {
     padding: 1rem 15rem;
+    width: 100%;
     border-radius: 0.3125rem;
     outline: none;
     border: 0.125rem solid rgba(84, 95, 125, 0.15);
@@ -72,6 +106,7 @@
     // font-family: $secondary-font;
     color: $secondary-color;
     font-weight: 600;
+    letter-spacing: 0.1em;
   }
 
   &__button {

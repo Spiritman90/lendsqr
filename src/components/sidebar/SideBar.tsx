@@ -122,7 +122,7 @@ const SideBar = () => {
         <p className="sidebar__heading2">Dashboard</p>
       </div>
       <p className="sidebar__brand">CUSTOMERS</p>
-      <div className="sidebar__links brand">
+      <div className="sidebar__links">
         <Links links={links1} />
         <p className="sidebar__brand">BUSINESSES</p>
         <Links links={links2} />

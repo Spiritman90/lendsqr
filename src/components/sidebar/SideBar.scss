@@ -2,18 +2,19 @@
 
 .sidebar {
   position: fixed;
-  width: 17.6875rem;
-  height: 106.125rem;
+  max-width: 17.6875rem;
+  min-height: 106.125rem;
   box-shadow: 0rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.04);
   background-color: #fff;
-  // background-color: antiquewhite;
+  overflow-y: scroll;
 
   &__organization {
     display: flex;
     gap: 0.625rem;
     margin: 0 1rem;
     margin-bottom: 3.25rem;
-    margin-top: 2.4375rem;
+    // margin-top: 2.4375rem;
+    margin-top: 7rem;
   }
   &__dashboard {
     display: flex;
@@ -46,7 +47,10 @@
     ul {
       .active {
         border-left: 0.3rem solid $secondary-color;
+
         a {
+          color: $light-color;
+          font-weight: 400;
           color: $light-color;
         }
       }
@@ -54,10 +58,17 @@
         border-left: 0.3rem solid transparent;
         margin: 1.25rem 0;
         list-style-type: none;
+        font-weight: 400;
+        color: $light-color;
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
         a {
           margin: 0 1rem;
           text-decoration: none;
           font-size: 1rem;
+          font-weight: 400;
           display: flex;
           gap: 0.625rem;
           color: $light-color;

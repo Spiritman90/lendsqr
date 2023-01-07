@@ -10,12 +10,18 @@
   src: local("Avenir Next"),
     url(../../fonts/AvenirNextLTPro-It.otf) format("opentype");
 }
+
 @font-face {
   font-family: "Avenir Next";
   src: local("Avenir Next"),
     url(../../fonts/AvenirNextLTPro-Regular.otf) format("opentype");
 }
-
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 700;
+  src: local("Avenir Next"),
+    url(../../fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+}
 $secondary-color: #39cdcc;
 $primary-color: #213f7d;
 $light-color: #545f7d;
