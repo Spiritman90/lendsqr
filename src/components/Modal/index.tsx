@@ -1,4 +1,4 @@
-import "./Modal.scss";
+import "./style.scss";
 import EyeIcon from "../../assets/svgs/EyeIcon";
 import BlacklistUserIcon from "../../assets/svgs/BlacklistUserIcon";
 import ActivateUserIcon2 from "../../assets/svgs/ActivateUserIcon2";

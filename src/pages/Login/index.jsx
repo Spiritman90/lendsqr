@@ -1,4 +1,4 @@
-import "./LoginPage.scss";
+import "./style.scss";
 import LoginImage from "../../assets/img/pablo-sign-in 1.jpg";
 import Lendsqr from "../../assets/svgs/Lendsqr";
 import Logo from "../../assets/svgs/Logo";

@@ -1,4 +1,4 @@
-import "./Navbar.scss";
+import "./style.scss";
 import NavbarLogo from "../../assets/svgs/NavbarLogo";
 import GlassIcon from "../../assets/svgs/GlassIcon";
 import Avatar from "../../assets/img/Avatar.jpg";

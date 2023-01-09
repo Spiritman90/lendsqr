@@ -1,4 +1,4 @@
-import "./SideBar.scss";
+import "./style.scss";
 import UserFriends from "../../assets/svgs/UserFriends";
 import UsersIcon from "../../assets/svgs/UsersIcon";
 import SackIcon from "../../assets/svgs/SackIcon";
@@ -21,7 +21,7 @@ import FeesAndPricing from "../../assets/svgs/FeesAndPricing";
 import Audit from "../../assets/svgs/Audit";
 import DownArrow from "../../assets/svgs/DownArrow";
 import HomeIcon from "../../assets/svgs/HomeIcon";
-import Links from "../links/Links";
+import Links from "../Links";
 
 const SideBar = () => {
   const links1 = [
@@ -121,13 +121,10 @@ const SideBar = () => {
         <HomeIcon />
         <p className="sidebar__heading2">Dashboard</p>
       </div>
-      <p className="sidebar__brand">CUSTOMERS</p>
       <div className="sidebar__links">
-        <Links links={links1} />
-        <p className="sidebar__brand">BUSINESSES</p>
-        <Links links={links2} />
-        <p className="sidebar__brand">SETTINGS</p>
-        <Links links={links3} />
+        <Links links={links1} title="CUSTOMERS" />
+        <Links links={links2} title="BUSINESSES" />
+        <Links links={links3} title="SETTINGS" />
       </div>
     </div>
   );
